@@ -1,0 +1,207 @@
+<html>
+<head>
+    <style>
+        @page {
+            margin: 14px 7px 0 7px;
+        }
+       html
+       {
+         font-family: Arial;
+       }
+       table
+       {
+         width: 250px;
+         text-align: center;
+
+       }
+       .receipt-number {
+
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px
+       }
+       .items-header {
+            border: 0;
+            border-collapse: separate;
+            border-spacing: 0 5px;
+            font-weight: bold;
+            margin-top: 10px;
+       }
+        .items thead tr th {
+            padding: 10px 0px;
+            border-collapse: separate;
+            border-spacing: 5px 5px;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+        }
+
+       .items tbody tr td {
+            font-weight: normal;
+       }
+       .items tr:first-child td {
+            padding-top: 10px;
+       }
+
+       .totals {
+
+            margin-top: 10px;
+            padding: 10px 0px;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+       }
+       .iva {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed black;
+       }
+
+      .qr {
+        margin-top: 20px;
+      }
+      .qr-code {
+            text-align: center;
+            margin-top: 5px;
+       }
+       .pie-factura-header{
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+
+            margin-bottom: 15px;
+       }
+       .izq {
+            text-align: left;
+       }
+       .der {
+            text-align: right;
+       }
+       .cant {
+            width: 50px;
+            vertical-align: text-top;
+       }
+        hr {
+            border-top: 2px dashed #000;
+        }
+
+    </style>
+</head>
+
+
+<table class="header" style="font-family: helvetica; font-size: 10px;">
+    <tr>
+        <td>
+            <div class="main_title">
+                <div><img src="" /></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="bill_info">
+                <div>IderoTech</div>
+                <div>Madrid</div>
+                <div>Maria de Molina 3</div>
+                <div>28006 - Madrid</div>
+                <div>Tel: 22222</div>
+                <div>NIF: 123456</div>
+                <div class="receipt-number" style="font-size: 13px">VENTA V - 0001-00000944</div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<table class="items" style="font-family: helvetica">
+    <thead style="font-size: 8px">
+    <tr>
+        <th class="cant">CANT</th>
+        <th class="izq">DESCRIPCIÓN</th>
+        <th class="der">P. UNIT</th>
+        <th class="der">PRECIO</th>
+    </tr>
+    </thead>
+    <tbody style="font-size: 8px">
+    <tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>blanco<br />large<br /><b>REF:</b> 10BLANCOL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr>
+    </tbody>
+</table>
+
+
+<table class="totals" style="font-family: helvetica; font-size: 20px">
+    <tr>
+        <td class="izq" style="font-weight: bold;">TOTAL</td>
+        <td class="der">72,00 €</td>
+    </tr>
+</table>
+
+
+<table class="iva" style="font-family: helvetica; font-size: 10px">
+    <thead>
+    <tr>
+        <td>Tasa</td>
+        <td>Sin IVA</td>
+        <td>Total IVA</td>
+        <td>IVA Inc.</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>10%</td><td>30,00</td><td>3,00</td><td>33,00</td></tr><tr><td>4%</td><td>37,50</td><td>1,50</td><td>39,00</td></tr>
+    </tbody>
+</table>
+
+
+<table class="qr" style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td>20/05/2023 - 14:29</td>
+    </tr>
+    <tr>
+        <td>Caja: 1</td>
+    </tr>
+    <tr>
+        <td>Tran: 944 - Tienda: 1</td>
+    </tr>
+    <tr>
+        <td>FACTURA SIMPLIFICADA</td>
+    </tr>
+    <tr>
+        <td>V -  0001-00000944</td>
+    </tr>
+</table>
+
+<table style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td>
+            <div class="qr-code"><img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAAAARzQklUCAgI
+CHwIZIgAAAJRSURBVHic7d3RaqRAEEDRGPL/v+w8DRhotKXLqvJyz+uSXXcuDZWxbbd93/cfYf1W
+X4CeZWA4A8MZGM7AcAaG+zv7w23bsq7j0ui3udnrm/1NcPT3rfy7Ga7+b65gOAPDGRjOwHCnQ9ZI
+xlfXK8NT1QDU6XM5cgXDGRjOwHAGhrs9ZI2sDDYrw8nKN09dh6KvqOtzBcMZGM7AcAaGCxmyuus0
+eGVzBcMZGM7AcAaGww1Z0fu03s4VDGdgOAPDGRguZMiqGli6D0odrs8VDGdgOAPDGRju9pDV6cm6
+6D1ZK7cQO30uR65gOAPDGRjOwHAb7aQ7bxf+5wqGMzCcgeEMDJd6TlbGeVXRxzpUfbsV9U2bKxjO
+wHAGhjMwXOrG99khIfpbpujhLuNnowZcVzCcgeEMDGdguNMhq2o/UqdbflWnyq9cy5ErGM7AcAaG
+MzBcyO3C6CGh6nZc9M92OIvLFQxnYDgDwxkY7nTje6en7ToNXt2HzyNXMJyB4QwMZ2C4Vz9dWPVa
+nYy9W1GDlysYzsBwBoYzMFzq04UrMjbIj1Q9mei7CzXFwHAGhjMw3O2nCymDTcZm/Q63OF3BcAaG
+MzCcgeFCjnCo2oAerdPrgTzCQVMMDGdgOAPDvfoF0bODSKfzr0aevIXoCoYzMJyB4QwM9+ohayR6
+eMrY0P7kUQ+uYDgDwxkYzsBwIUNWp1t+VU/+dfoMjlzBcAaGMzCcgeFuD1mdnjic1endhdkHmbqC
+4QwMZ2A4A8O9+pwsXXMFwxkYzsBwBoYzMJyB4QwM9wE10v72Yu3RlwAAAABJRU5ErkJggg==
+" /></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="qr-code"><div class="pie-factura-header">Gracias por su compra.</div></div>
+        </td>
+    </tr>
+</table>
+
+<table class="pie-factura" style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td class="izq">Visa</td>
+        <td class="der">72,00 €</td>
+    </tr>
+    <tr>
+        <td class="izq">Numero tarjeta</td>
+        <td class="der">xxxx xxxx xxxx 1234</td>
+    </tr>
+</table>
+
+</html>

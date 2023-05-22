@@ -1,0 +1,207 @@
+<html>
+<head>
+    <style>
+        @page {
+            margin: 14px 7px 0 7px;
+        }
+       html
+       {
+         font-family: Arial;
+       }
+       table
+       {
+         width: 250px;
+         text-align: center;
+
+       }
+       .receipt-number {
+
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px
+       }
+       .items-header {
+            border: 0;
+            border-collapse: separate;
+            border-spacing: 0 5px;
+            font-weight: bold;
+            margin-top: 10px;
+       }
+        .items thead tr th {
+            padding: 10px 0px;
+            border-collapse: separate;
+            border-spacing: 5px 5px;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+        }
+
+       .items tbody tr td {
+            font-weight: normal;
+       }
+       .items tr:first-child td {
+            padding-top: 10px;
+       }
+
+       .totals {
+
+            margin-top: 10px;
+            padding: 10px 0px;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+       }
+       .iva {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed black;
+       }
+
+      .qr {
+        margin-top: 20px;
+      }
+      .qr-code {
+            text-align: center;
+            margin-top: 5px;
+       }
+       .pie-factura-header{
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+
+            margin-bottom: 15px;
+       }
+       .izq {
+            text-align: left;
+       }
+       .der {
+            text-align: right;
+       }
+       .cant {
+            width: 50px;
+            vertical-align: text-top;
+       }
+        hr {
+            border-top: 2px dashed #000;
+        }
+
+    </style>
+</head>
+
+
+<table class="header" style="font-family: helvetica; font-size: 10px;">
+    <tr>
+        <td>
+            <div class="main_title">
+                <div><img src="" /></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="bill_info">
+                <div>IderoTech</div>
+                <div>Madrid</div>
+                <div>Maria de Molina 3</div>
+                <div>28006 - Madrid</div>
+                <div>Tel: 22222</div>
+                <div>NIF: 123456</div>
+                <div class="receipt-number" style="font-size: 13px">VENTA V - 0001-00000946</div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<table class="items" style="font-family: helvetica">
+    <thead style="font-size: 8px">
+    <tr>
+        <th class="cant">CANT</th>
+        <th class="izq">DESCRIPCIÓN</th>
+        <th class="der">P. UNIT</th>
+        <th class="der">PRECIO</th>
+    </tr>
+    </thead>
+    <tbody style="font-size: 8px">
+    <tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>morado<br />large<br /><b>REF:</b> 10MoadoL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Calcetin deportivo Pack x 5<br/>negro<br /><b>REF:</b> 11NEGRO-<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr><tr class="separator"><td colspan="4"><hr/></td></tr><tr><td class="cant">1</td><td class="izq">Camiseta de algodon lisa<br/>blanco<br />large<br /><b>REF:</b> 10BLANCOL<br /><b>RFID:</b> 0</td><td class="der">3,00</td><td class="der">3,00 €</td></tr>
+    </tbody>
+</table>
+
+
+<table class="totals" style="font-family: helvetica; font-size: 20px">
+    <tr>
+        <td class="izq" style="font-weight: bold;">TOTAL</td>
+        <td class="der">12,00 €</td>
+    </tr>
+</table>
+
+
+<table class="iva" style="font-family: helvetica; font-size: 10px">
+    <thead>
+    <tr>
+        <td>Tasa</td>
+        <td>Sin IVA</td>
+        <td>Total IVA</td>
+        <td>IVA Inc.</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>10%</td><td>2,73</td><td>0,27</td><td>3,00</td></tr><tr><td>4%</td><td>8,65</td><td>0,35</td><td>9,00</td></tr>
+    </tbody>
+</table>
+
+
+<table class="qr" style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td>20/05/2023 - 14:35</td>
+    </tr>
+    <tr>
+        <td>Caja: 1</td>
+    </tr>
+    <tr>
+        <td>Tran: 946 - Tienda: 1</td>
+    </tr>
+    <tr>
+        <td>FACTURA SIMPLIFICADA</td>
+    </tr>
+    <tr>
+        <td>V -  0001-00000946</td>
+    </tr>
+</table>
+
+<table style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td>
+            <div class="qr-code"><img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAAAARzQklUCAgI
+CHwIZIgAAAJTSURBVHic7d3RTuwwDABRivj/Xy6vSERtd+PYzuyc14tg6SiSb5qW4zzP80tY39Uf
+QGsZGM7AcAaGMzCcgeF+rv7xOI6sz3Fr5n9zo99j9P1mvq7K3XVxBcMZGM7AcAaGuxyyRjK2rqOH
+mIzP3PW6uILhDAxnYDgDw708ZI3MDEWddqiiB6Wq6/KXKxjOwHAGhjMwXMiQVeXpIPL0654OYztx
+BcMZGM7AcAaG23rIGtnxXNVKrmA4A8MZGM7AcCFDVvfdnqcDVfTv0eG6uILhDAxnYDgDw708ZHXa
+Acp4anDmVmMHrmA4A8MZGM7AcJdDVoedmEzRZ7w6cAXDGRjOwHAGhlv2nqwdz0F1f0ryHa5gOAPD
+GRjOwHBHxN9sqHqvVcbP7X5L0peRfjgDwxkYzsBwyw6+zwwdMwfVM54u7DR43XEFwxkYzsBwBoZL
+fRlp9PAUPVBVDXcrz3i5guEMDGdgOAPDhTxdGH27q9NtwIyfsfKsmisYzsBwBoYzMFzImawqGbtC
+O90aHHEFwxkYzsBwBoZb9nRhtOjD8NEDUNVOlgffP5yB4QwMZ2C4l28XZmx8VT2t2H2Qe+e6uILh
+DAxnYDgDw6UefB+pGtpmBqDoocgzWXqbgeEMDGdguK3/QPTMsNPhVt6VqLNbrmA4A8MZGM7AcFsP
+WTM7T93fxRV1q9EVDGdgOAPDGRhu2ctIq2ScecoYvKJuIbqC4QwMZ2A4A8OFvCerk+hdq5Gq1zp4
+8F3/GBjOwHAGhtv6PVm65wqGMzCcgeEMDGdgOAPDGRjuF/l3Hw9yvBILAAAAAElFTkSuQmCC
+" /></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="qr-code"><div class="pie-factura-header">Gracias por su compra.</div></div>
+        </td>
+    </tr>
+</table>
+
+<table class="pie-factura" style="font-family: helvetica; font-size: 10px">
+    <tr>
+        <td class="izq">Visa</td>
+        <td class="der">12,00 €</td>
+    </tr>
+    <tr>
+        <td class="izq">Numero tarjeta</td>
+        <td class="der">xxxx xxxx xxxx 1234</td>
+    </tr>
+</table>
+
+</html>
